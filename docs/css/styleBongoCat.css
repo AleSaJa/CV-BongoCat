@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: border-box;
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    color: #fff;
+}
+
+body{
+    background-color: black;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+}
+
+.nav__container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2vh 2vw;
+    justify-content: center;
+}
+
+.nav__instrument{
+    display: inline-block;
+    margin: 0 1vh;
+    padding: 0 .5vw;
+    text-align: center;
+}
+
+.nav__button{
+    display: inline-flex;
+    height: 2em; width: 2em;
+    padding: .2em .5em .5em .2em;
+    margin: 1vh .3vw;
+    background-color: #5a5a5a;
+    text-align: left;
+    text-decoration: none;
+    border: #3d3c3c solid 0.2vh;
+    border-radius: .4em; 
+    box-shadow:inset -6px -4px 0 0 #3a3a3a;
+}
+
+.nav__button--space{
+    width: 8vw;
+    margin: 1vh 2vw;
+}
+
+.container{
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    margin: auto;
+    width: 75%; height: 75%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.conatiner__cat{
+    position: relative;
+    margin: 2vh auto;
+    height: min-content;
+    width: min-content;
+    z-index: 10;
+}
+
+.image__catGif{
+    height: 40vh;
+}
+
+.container__instruments{
+    position: relative;
+    align-self: flex-start;
+    height: 45%;
+    top: -23%;  left: 28%;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 40;
+}
+
+.nav__container--footer{
+    margin: 2vh 25%;
+    justify-content: space-evenly;
+}
