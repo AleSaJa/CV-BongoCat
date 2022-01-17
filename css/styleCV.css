@@ -229,10 +229,10 @@ ul{
     color: #fff;
 }
 
-.footer{
+.footer1{
     color:#fff;
     padding: 0 8% 4vh;
-    height: 70vh;
+    /*height: 70vh;*/
     flex-flow: row wrap;
     display: flex;
     align-items: flex-start;
@@ -242,11 +242,12 @@ ul{
     opacity: 0.7;*/
 }
 
-.footer:hover{
+.footer1:hover{
     background-color: #121212;
 }
 
 .footer__text{
+
     width: 100%;
     font-size: 2em;
     text-align: center;
@@ -263,12 +264,26 @@ ul{
 
 .footer__contac{
     align-self: end;
-    width: 100%;
+    width: 100%; 
+    line-height: 0;
     font-size: 16px;
 }
 
 .footer__contac--link{
+    height: auto;
     font-size: inherit;
+}
+
+.btn{
+    border-radius: 50%;
+    padding: .375rem .375rem;
+    line-height: 0;
+    transition: .3s ease-in-out all;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    /*object-fit: contain;*/
 }
 
 .footer__contac--a{
